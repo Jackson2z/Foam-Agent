@@ -1,0 +1,27 @@
+{
+  "manifest_version": "uif.runtime-capabilities/v1",
+  "backend_id": "openfoam-foundation-v10",
+  "runtime": {
+    "family": "openfoam",
+    "distribution": "foundation",
+    "version": "10",
+    "build_id": "deployment-supplied"
+  },
+  "accepted_ir_versions": [
+    "uif.case-ir/v1"
+  ],
+  "implementation_status": "legacy-adapter-required",
+  "selectable": false,
+  "target_capabilities": [
+    "zero-fields",
+    "constant-dictionaries",
+    "system-dictionaries",
+    "allrun",
+    "external-mesh"
+  ],
+  "prohibited_actions": [
+    "solver-source-build",
+    "solver-source-patch",
+    "silent-capability-downgrade"
+  ]
+}

@@ -1,15 +1,16 @@
 {
-  "$schema": "https://urban-information-field.local/schemas/v1/runtime-capability-manifest.schema.json",
-  "manifest_version": "uif.runtime-capabilities/v1",
+  "api_version": "uif/v1",
+  "kind": "RuntimeCapabilityManifest",
+  "availability": "current",
   "runtime": {
-    "name": "openfoam-foundation",
+    "name": "openfoam",
+    "distribution": "Foundation",
     "version": "10",
-    "build_id": "externally-supplied"
+    "build_id": null
   },
   "input_backend": {
     "name": "foam-agent-llm-rag-legacy",
-    "version": "2.0.0",
-    "integration_status": "current-legacy"
+    "contract_version": "uif.case-ir/v1"
   },
   "capabilities": [
     "natural-language-planning",
@@ -18,10 +19,5 @@
     "hpc-runner",
     "review-retry-loop"
   ],
-  "source_build_owned": false,
-  "limitations": [
-    "Does not yet consume canonical CaseIR.",
-    "Native generation is not yet deterministic.",
-    "Foundation OpenFOAM v13 is not covered by this profile."
-  ]
+  "source_compilation": false
 }

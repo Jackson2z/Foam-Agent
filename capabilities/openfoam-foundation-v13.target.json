@@ -1,0 +1,23 @@
+{
+  "api_version": "uif/v1",
+  "kind": "RuntimeCapabilityManifest",
+  "availability": "planned",
+  "runtime": {
+    "name": "openfoam",
+    "distribution": "Foundation",
+    "version": "13",
+    "build_id": null
+  },
+  "input_backend": {
+    "name": "openfoam-foundation-v13-input-backend",
+    "contract_version": "uif.case-ir/v1"
+  },
+  "capabilities": [
+    "caseir-v1",
+    "deterministic-native-emission",
+    "external-mesh",
+    "multi-region-case",
+    "bundle-manifest"
+  ],
+  "source_compilation": false
+}

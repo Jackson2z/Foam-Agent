@@ -1,0 +1,23 @@
+{
+  "api_version": "uif/v1",
+  "kind": "RuntimeCapabilityManifest",
+  "availability": "current",
+  "runtime": {
+    "name": "openfoam",
+    "distribution": "Foundation",
+    "version": "10",
+    "build_id": null
+  },
+  "input_backend": {
+    "name": "foam-agent-llm-rag-legacy",
+    "contract_version": "uif.case-ir/v1"
+  },
+  "capabilities": [
+    "natural-language-planning",
+    "llm-rag-native-file-generation",
+    "local-runner",
+    "hpc-runner",
+    "review-retry-loop"
+  ],
+  "source_compilation": false
+}

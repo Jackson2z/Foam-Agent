@@ -1,15 +1,16 @@
 {
-  "$schema": "https://urban-information-field.local/schemas/v1/runtime-capability-manifest.schema.json",
-  "manifest_version": "uif.runtime-capabilities/v1",
+  "api_version": "uif/v1",
+  "kind": "RuntimeCapabilityManifest",
+  "availability": "planned",
   "runtime": {
-    "name": "openfoam-foundation",
+    "name": "openfoam",
+    "distribution": "Foundation",
     "version": "13",
-    "build_id": "to-be-bound-at-deployment"
+    "build_id": null
   },
   "input_backend": {
     "name": "openfoam-foundation-v13-input-backend",
-    "version": "0.1.0",
-    "integration_status": "planned"
+    "contract_version": "uif.case-ir/v1"
   },
   "capabilities": [
     "caseir-v1",
@@ -18,9 +19,5 @@
     "multi-region-case",
     "bundle-manifest"
   ],
-  "source_build_owned": false,
-  "notes": [
-    "This is a target profile and does not claim implementation.",
-    "Runtime-specific dictionaries and solvers require explicit v13 mappings."
-  ]
+  "source_compilation": false
 }

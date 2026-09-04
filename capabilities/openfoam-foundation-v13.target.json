@@ -1,0 +1,26 @@
+{
+  "$schema": "https://urban-information-field.local/schemas/v1/runtime-capability-manifest.schema.json",
+  "manifest_version": "uif.runtime-capabilities/v1",
+  "runtime": {
+    "name": "openfoam-foundation",
+    "version": "13",
+    "build_id": "to-be-bound-at-deployment"
+  },
+  "input_backend": {
+    "name": "openfoam-foundation-v13-input-backend",
+    "version": "0.1.0",
+    "integration_status": "planned"
+  },
+  "capabilities": [
+    "caseir-v1",
+    "deterministic-native-emission",
+    "external-mesh",
+    "multi-region-case",
+    "bundle-manifest"
+  ],
+  "source_build_owned": false,
+  "notes": [
+    "This is a target profile and does not claim implementation.",
+    "Runtime-specific dictionaries and solvers require explicit v13 mappings."
+  ]
+}
